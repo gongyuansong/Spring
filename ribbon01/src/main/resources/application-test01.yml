@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: microservice-consumer-movie-hystrix-dashboard
+server:
+  port: 8007
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: http://localhost:8001/eureka/
+  instance:
+    prefer-ip-address: true

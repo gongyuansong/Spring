@@ -1,0 +1,42 @@
+spring:
+  profiles:
+    active: 01
+---
+server:
+  port: 8004
+spring: 
+  profiles: 01
+  application:
+    name: eurekaserver03——client01
+eureka:
+  client:
+#    register-with-eureka: false
+#    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:8003/eureka/
+---
+server:
+  port: 8005
+spring: 
+  profiles: 02
+  application:
+    name: eurekaserver03——client01
+eureka:
+  client:
+#    register-with-eureka: false
+#    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:8003/eureka/
+---
+server:
+  port: 8006
+spring: 
+  profiles: 03
+  application:
+    name: eurekaserver03——client01
+eureka:
+  client:
+#    register-with-eureka: false
+#    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:8003/eureka/
