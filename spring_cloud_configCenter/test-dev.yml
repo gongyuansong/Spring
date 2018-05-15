@@ -8,7 +8,6 @@ spring:
           uri: https://github.com/gongyuansong/Spring.git
           searchPaths: spring_cloud_configCenter
           username: 835089155@qq.com
-          password: 835089155gys
   application:
     name: dev
 eureka:
