@@ -1,3 +1,19 @@
-spring£º 
-  application£º
-    name: testÖÐÎÄ
+server:
+  port: 8011
+spring: 
+  cloud:
+    config: 
+      server:
+        git:
+          uri: https://github.com/gongyuansong/Spring.git
+          searchPaths: spring_cloud_configCenter
+          username: 835089155@qq.com
+          password: 835089155gys
+  application:
+    name: dev
+eureka:
+  client:
+#    register-with-eureka: false
+#    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:8001/eureka/
