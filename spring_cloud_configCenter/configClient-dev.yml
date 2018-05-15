@@ -1,0 +1,14 @@
+server:
+  port: 8014
+spring: 
+  application:
+    name: configClient——getconfigfromConfigServer
+eureka:
+  client:
+#    register-with-eureka: false
+#    fetch-registry: false
+    service-url:
+      defaultZone: http://eureka1:8002/eureka/
+feign:
+  hystrix:
+    enabled: true
