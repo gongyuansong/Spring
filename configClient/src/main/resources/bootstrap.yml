@@ -1,0 +1,19 @@
+server:
+  port:8015
+eureka:
+  client:
+#    register-with-eureka: false
+#    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:8001/eureka/
+spring:
+  application:
+    name: configClient
+  cloud:
+    config:
+      label: dev
+      profile: dev
+      discovery:
+        enabled: true
+        serviceId: configServer
+#      uri:

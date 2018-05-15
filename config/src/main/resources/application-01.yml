@@ -8,7 +8,7 @@ spring:
           uri: https://github.com/gongyuansong/Spring.git/
           search-paths: spring_cloud_configCenter
           username: gongyuansong
-          password: Ìæ»»ÃÜÂë
+          password: ÃÜÂë
   application:
     name: configServer
 eureka:
