@@ -1,1 +1,3 @@
-但是发射点犯得上大师傅
+spring： 
+  application：
+    name: test中文
