@@ -1,0 +1,6 @@
+spring:
+  profiles:
+    active: 01
+    
+# 访问地址：http://localhost:8013/dev/test-test.yml
+# dev 表示分支名称，test是application的名称，-后面的test是profiles名称
